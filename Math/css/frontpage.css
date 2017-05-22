@@ -1,0 +1,159 @@
+#math-1{
+   width: 500PX;
+   /*static: original default position type*/
+
+   /*relative: follows the default web page flow, but can be
+   adjusted relatively from its position*/
+
+   /*absolut: takes the element out of the original page
+   flow which you can then manually place wherever you want*/
+
+   /*fixed : same as absolute but stays in the specified place in the viewport*/
+   position: relative;
+   padding-top: 10px;
+
+   /*top,left,bottom,right: move the element by a ccertain amount
+    relative to its original position without distrupting flow*/
+    /*top:50px;
+    left:80px;
+    */
+
+
+    /*specifies whether an element is in front or behind another element*/
+    /*z-index: -1;    negative-back, positive-front*/
+
+    float:right;
+    padding-left: 30px;
+}
+#lists{
+  position: relative;
+  padding-top: 20px;
+
+
+
+}
+#math-2{
+  float:left;
+  padding-top:20px;
+  padding-right:30px;
+  padding-bottom: 30px;
+  position:relative;
+  z-index:1;
+
+}
+
+#history-section {
+
+
+      padding:15px;
+      background-color:rgb(177,232,89);
+      width:100%;
+      height: 300px;
+
+      /*hides anything that overflows off the containers*/
+
+      overflow:hidden;
+
+      /*adds a scrollbar on the container*/
+
+      overflow:scroll;
+
+      /*adds a scrollbar on the container only on sides where it needs it*/
+
+      overflow: auto;
+
+      /*shows anything that overflows off the container*/
+      /*overflow:visible;*/
+
+
+
+}
+header {
+
+  text-align: center;
+  margin: 2em 0 2em 0;
+
+}
+header a{
+
+  margin: 0 4em 0 4em;
+  padding:1em;
+  background-color:orange;
+  border-radius: 4px;
+  text-decoration: none;
+
+}
+header a:hover{
+  background-color: white;
+  color:orange;
+
+}
+@@media(max-width:920px)  {
+
+
+  header a{
+  margin: :0 1em 0 1em;
+}
+
+
+}
+
+@media(max-width:580px){
+
+  header a{
+ position: relative;
+ display: block;
+ border-radius: 0px;
+
+
+  }
+}
+@media(max-width:400px){
+
+#math-1, #math-2{
+
+width:100%;
+
+}
+
+}
+#top{
+
+display:block;
+padding:10px;
+background-color: yellow;
+width:10%;
+
+}
+
+#top:hover {
+
+  background-color: orange;
+  color:red;
+}
+#survey{
+
+display:block;
+padding:10px;
+background-color: orange;
+width:15%;
+}
+#survey:hover{
+background-color: yellow;
+color:red;
+
+}
+#math-section{
+
+overflow: auto;
+  background-color: rgb(124,255,162);
+}
+#audio{
+
+
+ display:block;
+}
+#list-sec{
+
+  background-color: rgb(216,232,171);
+}

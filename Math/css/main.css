@@ -1,0 +1,153 @@
+body {
+  /*background-color: mistyrose;*//*background color*//*RGB way of specifying color*/
+  /*background-color: rgb(162,255,216);*/
+  /*background-image:url("../images/feng.jpg");*/
+  background-color:rgb(177,245,255);
+
+  color:black;/*text color*/
+  font-family: 'Spirax', cursive;
+
+  /*font-family: cursive,"Geogia", Times New Roman, sans-serif;*/
+
+
+
+}
+
+h1{
+   color: #8BF1FF;/*HEXDECIMAL way of specifying color*//*text color*/
+   font-size: 3em;/*em: relative units, px: pixels, %:percent*/
+   font-family: 'Spirax', cursive;
+   background-color: pink;
+   width:70%;
+   padding:50px;
+   margin: 60px;
+   border:dashed 10px  orange;
+   /*centers text*/
+   text-align: center;
+
+   /*to, right bottom,left*/
+   /*margin: 50px 20px 100px 40px*/
+   /*automaticaly calculates left & right margins,centers it*/
+   margin: auto;
+   position: relative;
+   /*call the animation by their name on the element you want to animate*/
+   animation-name: bannerAnimation;/*name of animation*/
+   animation-duration: 10s;/*duration*/
+   animation-iteration-count: 3 ;/*how many time it animates*/
+   animation-timing-function: linear;/*ease,linear,ease-in,ease-out,ease-in-out*/
+   animation-direction: :reverse;/*normal,reverse,alternate*/
+
+
+
+}
+/*first use the@keyframe rule to specify the animation to be done*/
+@keyframes bannerAnimation {
+  0%{
+    background-color: pink;
+    left:0px;
+    transform:rotate(0deg);
+  }
+
+  50%{
+
+background-color: yellow;
+left:500px;
+transform:rotate(180deg)
+
+
+  }
+  100%{
+
+background-color: orange;
+left:0px;
+transform:rotate(360deg)
+
+  }
+ /*
+  from{
+
+    background-color:pink;
+    color:black;
+    width:5%;
+    font-size:0.2em;
+  }*/
+  /*to{
+
+    background-color:yellow;
+    color:blue;
+    width:8%;
+    font-size: 4em;
+
+  }*/
+
+}
+/*use @media to start using a media quert.
+You can place a max-width as a parameter for the CSS.*/
+@media (max-width:735px) {
+
+  h1{
+    font-size: 1.5em;
+
+
+
+}
+/*these rules only get invoked when the screen width is 400px or less*/
+
+@media(max-width:400px){
+
+h1{
+   font-size: 1em;
+   padding:1em;
+
+
+}
+
+}
+
+
+/*p{
+
+  width:80%;
+  margin: auto;
+
+}*/
+/*to call ids, use a hashtag before calling the id name */
+/*ids can only be used once per page */
+/*#math-1 {
+
+     color：blue;
+     width:250px;/*with of image(px,em,%)*/
+     /*height:100px;*/
+/*img {
+
+      width:500px;
+
+
+}*/
+
+/*to call classes, use a period before calling the class name
+classes can be used multiple times in a page*/
+/*.magenta {
+
+    color:magenta;
+
+}*/
+
+
+li{
+   /*inline displays elements in a line*/
+
+   display:inline;
+
+   /*block displays elements on top of each other*/
+
+   display:block;
+
+
+
+}
+audio{
+      display:block;
+      margin:15px;
+
+}
